@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324F963F1929D77D0000AC46 /* ASTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 324F963E1929D77D0000AC46 /* ASTool.m */; };
+		32A6B3C21929E75100487497 /* ASConstans.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A6B3C11929E75100487497 /* ASConstans.m */; };
 		32AAAA981924B60D00DF5223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AAAA971924B60D00DF5223 /* Foundation.framework */; };
 		32AAAA9A1924B60D00DF5223 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AAAA991924B60D00DF5223 /* CoreGraphics.framework */; };
 		32AAAA9C1924B60D00DF5223 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AAAA9B1924B60D00DF5223 /* UIKit.framework */; };
@@ -14,13 +16,17 @@
 		32AAAAA41924B60D00DF5223 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AAAAA31924B60D00DF5223 /* main.m */; };
 		32AAAAA81924B60D00DF5223 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AAAAA71924B60D00DF5223 /* ASAppDelegate.m */; };
 		32AAAAAB1924B60D00DF5223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AAAAA91924B60D00DF5223 /* Main.storyboard */; };
-		32AAAAAE1924B60D00DF5223 /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AAAAAD1924B60D00DF5223 /* ASViewController.m */; };
+		32AAAAAE1924B60D00DF5223 /* ASClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AAAAAD1924B60D00DF5223 /* ASClientViewController.m */; };
 		32AAAAB01924B60D00DF5223 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AAAAAF1924B60D00DF5223 /* Images.xcassets */; };
 		32AAAAB71924B60D00DF5223 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AAAAB61924B60D00DF5223 /* XCTest.framework */; };
 		32AAAAB81924B60D00DF5223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AAAA971924B60D00DF5223 /* Foundation.framework */; };
 		32AAAAB91924B60D00DF5223 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AAAA9B1924B60D00DF5223 /* UIKit.framework */; };
 		32AAAAC11924B60D00DF5223 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32AAAABF1924B60D00DF5223 /* InfoPlist.strings */; };
 		32AAAAC31924B60D00DF5223 /* AsyncSocketTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AAAAC21924B60D00DF5223 /* AsyncSocketTestTests.m */; };
+		32AAAAD01924B93E00DF5223 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AAAACD1924B93E00DF5223 /* AsyncSocket.m */; };
+		32AAAAD11924B93E00DF5223 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AAAACF1924B93E00DF5223 /* AsyncUdpSocket.m */; };
+		32AAAAD41924B9BE00DF5223 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AAAAD31924B9BE00DF5223 /* CFNetwork.framework */; };
+		32AF61B61925E2900027746D /* ASServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF61B51925E2900027746D /* ASServerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		324F963D1929D77D0000AC46 /* ASTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTool.h; sourceTree = "<group>"; };
+		324F963E1929D77D0000AC46 /* ASTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTool.m; sourceTree = "<group>"; };
+		32A6B3C01929E75100487497 /* ASConstans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASConstans.h; sourceTree = "<group>"; };
+		32A6B3C11929E75100487497 /* ASConstans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASConstans.m; sourceTree = "<group>"; };
 		32AAAA941924B60D00DF5223 /* AsyncSocketTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncSocketTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32AAAA971924B60D00DF5223 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		32AAAA991924B60D00DF5223 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +55,21 @@
 		32AAAAA61924B60D00DF5223 /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
 		32AAAAA71924B60D00DF5223 /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
 		32AAAAAA1924B60D00DF5223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		32AAAAAC1924B60D00DF5223 /* ASViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASViewController.h; sourceTree = "<group>"; };
-		32AAAAAD1924B60D00DF5223 /* ASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASViewController.m; sourceTree = "<group>"; };
+		32AAAAAC1924B60D00DF5223 /* ASClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASClientViewController.h; sourceTree = "<group>"; };
+		32AAAAAD1924B60D00DF5223 /* ASClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASClientViewController.m; sourceTree = "<group>"; };
 		32AAAAAF1924B60D00DF5223 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		32AAAAB51924B60D00DF5223 /* AsyncSocketTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncSocketTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32AAAAB61924B60D00DF5223 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		32AAAABE1924B60D00DF5223 /* AsyncSocketTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AsyncSocketTestTests-Info.plist"; sourceTree = "<group>"; };
 		32AAAAC01924B60D00DF5223 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32AAAAC21924B60D00DF5223 /* AsyncSocketTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncSocketTestTests.m; sourceTree = "<group>"; };
+		32AAAACC1924B93E00DF5223 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		32AAAACD1924B93E00DF5223 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		32AAAACE1924B93E00DF5223 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		32AAAACF1924B93E00DF5223 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		32AAAAD31924B9BE00DF5223 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		32AF61B41925E2900027746D /* ASServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASServerViewController.h; sourceTree = "<group>"; };
+		32AF61B51925E2900027746D /* ASServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASServerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32AAAAD41924B9BE00DF5223 /* CFNetwork.framework in Frameworks */,
 				32AAAA9A1924B60D00DF5223 /* CoreGraphics.framework in Frameworks */,
 				32AAAA9C1924B60D00DF5223 /* UIKit.framework in Frameworks */,
 				32AAAA981924B60D00DF5223 /* Foundation.framework in Frameworks */,
@@ -82,6 +100,7 @@
 		32AAAA8B1924B60D00DF5223 = {
 			isa = PBXGroup;
 			children = (
+				32AAAAD21924B94500DF5223 /* lib */,
 				32AAAA9D1924B60D00DF5223 /* AsyncSocketTest */,
 				32AAAABC1924B60D00DF5223 /* AsyncSocketTestTests */,
 				32AAAA961924B60D00DF5223 /* Frameworks */,
@@ -101,6 +120,7 @@
 		32AAAA961924B60D00DF5223 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				32AAAAD31924B9BE00DF5223 /* CFNetwork.framework */,
 				32AAAA971924B60D00DF5223 /* Foundation.framework */,
 				32AAAA991924B60D00DF5223 /* CoreGraphics.framework */,
 				32AAAA9B1924B60D00DF5223 /* UIKit.framework */,
@@ -115,10 +135,16 @@
 				32AAAAA61924B60D00DF5223 /* ASAppDelegate.h */,
 				32AAAAA71924B60D00DF5223 /* ASAppDelegate.m */,
 				32AAAAA91924B60D00DF5223 /* Main.storyboard */,
-				32AAAAAC1924B60D00DF5223 /* ASViewController.h */,
-				32AAAAAD1924B60D00DF5223 /* ASViewController.m */,
+				32AAAAAC1924B60D00DF5223 /* ASClientViewController.h */,
+				32AAAAAD1924B60D00DF5223 /* ASClientViewController.m */,
+				32AF61B41925E2900027746D /* ASServerViewController.h */,
+				32AF61B51925E2900027746D /* ASServerViewController.m */,
 				32AAAAAF1924B60D00DF5223 /* Images.xcassets */,
 				32AAAA9E1924B60D00DF5223 /* Supporting Files */,
+				324F963D1929D77D0000AC46 /* ASTool.h */,
+				324F963E1929D77D0000AC46 /* ASTool.m */,
+				32A6B3C01929E75100487497 /* ASConstans.h */,
+				32A6B3C11929E75100487497 /* ASConstans.m */,
 			);
 			path = AsyncSocketTest;
 			sourceTree = "<group>";
@@ -150,6 +176,17 @@
 				32AAAABF1924B60D00DF5223 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32AAAAD21924B94500DF5223 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				32AAAACC1924B93E00DF5223 /* AsyncSocket.h */,
+				32AAAACD1924B93E00DF5223 /* AsyncSocket.m */,
+				32AAAACE1924B93E00DF5223 /* AsyncUdpSocket.h */,
+				32AAAACF1924B93E00DF5223 /* AsyncUdpSocket.m */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +287,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				324F963F1929D77D0000AC46 /* ASTool.m in Sources */,
 				32AAAAA81924B60D00DF5223 /* ASAppDelegate.m in Sources */,
-				32AAAAAE1924B60D00DF5223 /* ASViewController.m in Sources */,
+				32AF61B61925E2900027746D /* ASServerViewController.m in Sources */,
+				32AAAAD11924B93E00DF5223 /* AsyncUdpSocket.m in Sources */,
+				32A6B3C21929E75100487497 /* ASConstans.m in Sources */,
+				32AAAAAE1924B60D00DF5223 /* ASClientViewController.m in Sources */,
 				32AAAAA41924B60D00DF5223 /* main.m in Sources */,
+				32AAAAD01924B93E00DF5223 /* AsyncSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +501,7 @@
 				32AAAAC81924B60D00DF5223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32AAAAC91924B60D00DF5223 /* Build configuration list for PBXNativeTarget "AsyncSocketTestTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +510,7 @@
 				32AAAACB1924B60D00DF5223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
